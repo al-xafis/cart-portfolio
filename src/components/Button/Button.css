@@ -1,0 +1,26 @@
+.button {
+  padding: 1rem 1.7rem;
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  opacity: .75;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+  text-transform: uppercase;
+}
+
+.button--yel {
+  padding: 1rem 1.7rem;
+  border: 1px solid currentColor;
+  border-radius: .5rem;
+  opacity: .75;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+  color: #2c2e31 !important;
+  background-color: #f6e770;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button--yel:hover {
+  opacity: 1;
+}

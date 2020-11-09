@@ -1,0 +1,44 @@
+.top_page {
+  width: 100%;
+  background: linear-gradient(1turn, #303435,#292d2d 47.83%, #151618);
+  min-height: 90rem;
+}
+
+.hero {
+  padding: 15rem 10rem 5rem 10rem;
+  min-height: 70rem;
+  text-align: center;
+}
+
+.hero__top {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.hero__top__button{
+  color: purple;
+  font-size: 1.7rem;
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+.hero__top__button:hover{
+  opacity: 0.75;
+}
+
+.hero__top h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.hero__top p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 6rem;
+}
+
+.hero_bottom img {
+  width: 100%;
+  max-width: 1080px;
+}

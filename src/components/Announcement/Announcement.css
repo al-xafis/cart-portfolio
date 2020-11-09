@@ -1,0 +1,18 @@
+.announcement {
+  background-color: #888F91;
+  text-align: center;
+  padding: 5rem;
+}
+
+.announcement h3 {
+  display: inline-block;
+  color: #fff;
+  margin: 0 1rem 1rem 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.classh {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
