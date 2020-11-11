@@ -30,31 +30,42 @@
 }
 
 .feature {
-  padding: 10rem 6rem;
+  padding: 12rem 16rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px inset #e1e3e3;
 }
 
 .feature__description {
-  flex: 1 0 100%;
+  width: 40%;
 }
 
 .feature__pic {
-  flex: 1 0 100%;
+  width: 40%;
+  display: block;
+  text-align: center;
+}
+
+.feature__pic img {
+  width: 30rem;
 }
 
 .feature h3 {
   font-size: 4rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .feature p {
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 5rem;
+  line-height: 1.5;
 }
 
 .feature__button {
   border: 1px solid black;
+  font-size: 1.65rem;
+  opacity: .5;
 }
