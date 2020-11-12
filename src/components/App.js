@@ -4,6 +4,7 @@ import './App.css';
 import Hero from './Hero/Hero';
 import Announcement from './Announcement/Announcement';
 import Features from './Features/Features';
+import Testimonials from './Testimonials/Testimonials';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
      <Hero />
      <Announcement />
      <Features />
+     <Testimonials />
     </div>
   );
 }
