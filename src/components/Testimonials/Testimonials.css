@@ -26,6 +26,10 @@
   position: relative;
   padding: 5rem 2rem 3rem;
   transition: all .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial__container:before{
@@ -52,7 +56,7 @@
   display: block;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
   line-height: 1.5;
 }
 

@@ -5,6 +5,7 @@ import Hero from './Hero/Hero';
 import Announcement from './Announcement/Announcement';
 import Features from './Features/Features';
 import Testimonials from './Testimonials/Testimonials';
+import Footer from './Footer/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
      <Announcement />
      <Features />
      <Testimonials />
+     <Footer />
     </div>
   );
 }
