@@ -55,6 +55,32 @@
 }
 
 .footer__link {
+  text-decoration: none;
+  color: inherit;
   font-size: 1.7rem;
   font-weight: 300;
+}
+
+.footer__bottom {
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  
+}
+
+.footer__bottom .uz {
+  order: 2;
+}
+
+.footer__bottom .copyright {
+  order: 1;
+  font-weight: 300;
+  word-spacing: 3px;
+}
+
+.france {
+  font-weight: 700;
+  font-style: italic;
 }

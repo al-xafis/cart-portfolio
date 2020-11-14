@@ -1,0 +1,57 @@
+.shop__header {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.shop__header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.shop__header__left {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.shop__header__imgcontainer{
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+}
+
+.shop__header__imgcontainer .imgjon{
+  width: 100%;
+  height: 100%;
+}
+
+.shop__header__right {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.shop__header__right a{
+  text-decoration: none;
+}
+
+.shop__header__auth {
+
+  margin-right: 2rem;
+  color: inherit;
+}
+
+.shop__header__cart {
+  font-size: 2rem;
+  color: #429bfc;
+}
+
+.price {
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+}

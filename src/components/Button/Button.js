@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Button.css';
 
-const Button = ({ text, classh, yel }) => {
+const Button = ({ text, classh, yel, to }) => {
   
   let helperClass
   if (yel && classh) {
@@ -13,9 +14,16 @@ const Button = ({ text, classh, yel }) => {
   } else {
     helperClass="button";
   }
+  if (to) {
+    console.log(to);
+    return (
+      <Link to={to} className={helperClass}>{text}</Link>
+    )
+  } else {
   return (
-  <a className={helperClass}>{text}</a>
+  <Link to="#" className={helperClass}>{text}</Link>
   )
+}
 };
 
 export default Button;

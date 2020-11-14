@@ -16,20 +16,21 @@ const Footer = () => {
           <nav className="footer__nav">
             <ul className="footer__list">
               <li className="footer__item">
-                <a className="footer__link">About</a>
+                <a href="#" className="footer__link">About</a>
               </li>
               <li className="footer__item">
-                <a className="footer__link">Partnership program</a>
+                <a href="#" className="footer__link">Partnership program</a>
               </li>
               <li className="footer__item">
-                <a className="footer__link">Terms of service</a>
+                <a href="#" className="footer__link">Terms of service</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div className="footer_bottom">
-
+      <div className="footer__bottom">
+        <div className="uz">Uz</div>
+        <div className="copyright">&copy; All rights reserverd, Snipcart inc. 2020 - <span className="france">Francais</span></div>
       </div>
     </div>
   )
