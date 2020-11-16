@@ -11,7 +11,8 @@ const shopcartsSlice = createSlice({
   reducers: {
     addToCart(state, action) {
       state.products.push(action.payload);
-      state.overallPrice += action.payload.price;
+      state.overallPrice = state.overallPrice + action.payload.price
+      state.overallPrice = parseFloat(state.overallPrice.toFixed(2));
     }
   }
 });
