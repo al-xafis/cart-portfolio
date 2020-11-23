@@ -4,6 +4,7 @@ import { removeFromCart } from '../ShopCart/shopcartsSlice'
 
 const ShopModalProduct = ({title, description, price, img, amount, id}) => {
   const dispatch = useDispatch();
+  console.log(id);
   return (
     <div className="shop__modal__product clearfix">
           <img src={img} alt="starry night" className="shop__modal__product__image"/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ShopProduct from '../ShopProduct/ShopProduct';
 import './ShopBody.css';
+import { nanoid } from '@reduxjs/toolkit';
 
 const products = [
   {
@@ -9,7 +10,7 @@ const products = [
     price: 79.95, 
     img: "/pics/starry-night.jpg",
     amount: 1,
-    id: 1
+    id: 0,
   },
   {
     title: "Rosy-Fingered Dawn at Louse Point", 
@@ -17,7 +18,7 @@ const products = [
     price: 49.95, 
     img: "/pics/rosy.jpg",
     amount: 1,
-    id: 2
+    id: 1,
   },
   {
     title: "Irises", 
@@ -25,7 +26,7 @@ const products = [
     price: 65.95, 
     img: "/pics/irises.jpg",
     amount: 1,
-    id: 3
+    id: 2,
   },
   {
     title: "Branches with Almond Blossom", 
@@ -33,7 +34,7 @@ const products = [
     price: 99.95, 
     img: "/pics/almond.jpg",
     amount: 1,
-    id: 4
+    id: 3,
   },
 
 ]
