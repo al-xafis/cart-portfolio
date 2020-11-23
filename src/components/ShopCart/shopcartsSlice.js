@@ -11,12 +11,18 @@ const shopcartsSlice = createSlice({
   reducers: {
     addToCart(state, action) {
       state.products.push(action.payload);
-      state.overallPrice = state.overallPrice + action.payload.price
+      state.overallPrice = state.overallPrice + action.payload.price;
+      state.overallPrice = parseFloat(state.overallPrice.toFixed(2));
+    },
+    removeFromCart(state, action) {
+      state.products.splice(action.payload.id, 1);
+      state.overallPrice = state.overallPrice - action.payload.price;
       state.overallPrice = parseFloat(state.overallPrice.toFixed(2));
     }
+
   }
 });
 
-export const { addToCart } = shopcartsSlice.actions;
+export const { addToCart, removeFromCart } = shopcartsSlice.actions;
 
 export default shopcartsSlice.reducer;
