@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ShopProduct.css';
 import { useDispatch } from 'react-redux';
 import {addToCart} from '../ShopCart/shopcartsSlice';
 
-const ShopProduct = ({ title, description, price, img, amount, id }) => {
+const ShopProduct = ({ title, description, price, img, id }) => {
 
   const dispatch = useDispatch();
+  const [amount, setAmount] = useState(1);
+  const parsedPrice = parseFloat((amount*price).toFixed(2));
 
   return (
     <div className="shop__body__content">
@@ -14,13 +16,16 @@ const ShopProduct = ({ title, description, price, img, amount, id }) => {
           <p>{description}</p>
           <div>
           <label htmlFor="quantity">QUANTITY</label>
-          <input type="number" id="quantity" name="quantity" value={amount} min="1"/>
+          <input type="number" id="quantity" name="quantity" value={amount} onChange={(e) => setAmount(e.target.value)}  min="1"/>
           </div>
-          <div className="price_tag">${price}</div>
-          <button className="shop__button" onClick={() => dispatch(addToCart({title, description, price, img, amount, id}))}>ADD TO CART</button>
+          <div className="price_tag">${parsedPrice}</div>
+          <button className="shop__button" onClick={() => dispatch(addToCart({title, description, price: parsedPrice, amount, img, id}))}>ADD TO CART</button>
         </div>
         <img src={img} alt="starry night" className="shop__image"/>
       </div>
+      // parseFloat(state.overallPrice.toFixed(2))
+      // {parseFloat(price * amount).toPrecision(6)}
+      
   )
 };
 

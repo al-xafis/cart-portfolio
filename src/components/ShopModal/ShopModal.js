@@ -6,7 +6,7 @@ import './ShopModal.css';
 const ShopModal = () => {
   const products = useSelector(state => state.shopcarts.products)
   const productsList = products.map((product, index) => 
-     <ShopModalProduct title={product.title} description={product.description} price={product.price} img={product.img} amount={product.amount} id={index}/>)
+     <ShopModalProduct key={index} title={product.title} description={product.description} price={product.price} amount={product.amount} img={product.img} id={index}/>)
 
   console.log(products);
 

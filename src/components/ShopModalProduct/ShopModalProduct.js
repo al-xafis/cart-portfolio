@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart } from '../ShopCart/shopcartsSlice'
 
 const ShopModalProduct = ({title, description, price, img, amount, id}) => {
   const dispatch = useDispatch();
-  console.log(id);
+  const [quantity, setQuantity] = useState(+amount);
+  const parsedPrice = parseFloat((quantity*price).toFixed(2));
   return (
     <div className="shop__modal__product clearfix">
           <img src={img} alt="starry night" className="shop__modal__product__image"/>
@@ -19,11 +20,11 @@ const ShopModalProduct = ({title, description, price, img, amount, id}) => {
             <div className="shop__modal__product__pricing">
               <label className="product__label">Quantity</label>
               <div className="minus-plus">
-              <button className="product__button">-</button>
-              <span className="product__amount">{amount}</span>
-              <button className="product__button">+</button>
+              <button className="product__button" onClick={() => setQuantity(prevQuantity => prevQuantity - 1)}>-</button>
+              <span className="product__amount">{quantity}</span>
+              <button className="product__button" onClick={() => setQuantity(prevQuantity => prevQuantity + 1)}>+</button>
               </div>
-              <div className="shop__modal__product__total-price">${price}</div>
+              <div className="shop__modal__product__total-price">${parsedPrice}</div>
             </div>
           </div>
         </div>
