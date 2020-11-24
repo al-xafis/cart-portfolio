@@ -1,12 +1,12 @@
 .top_page {
   width: 100%;
   background: linear-gradient(1turn, #303435,#292d2d 47.83%, #151618);
-  min-height: 90rem;
+  /* min-height: 90rem; */
 }
 
 .hero {
   padding: 15rem 10rem 5rem 10rem;
-  min-height: 70rem;
+  /* min-height: 70rem; */
   text-align: center;
 }
 
@@ -21,6 +21,7 @@
   font-size: 1.7rem;
   opacity: 1;
   transition: opacity .2s;
+  text-decoration: none;
 }
 
 .hero__top__button:hover{
@@ -38,7 +39,13 @@
   margin-bottom: 6rem;
 }
 
-.hero_bottom img {
+.hero__bottom img {
   width: 100%;
   max-width: 1080px;
+}
+
+@media screen and (max-width: 64.375em) {
+  .hero__bottom img {
+    width: 100%;
+  }
 }

@@ -10,9 +10,9 @@ const Features = () => {
       <h2>Professionally crafted shopping cart platform</h2>
       <p>For big & small businesses alike.</p>
       </div>
-      <Feature left="left"/>
       <Feature />
-      <Feature left="left"/>
+      <Feature />
+      <Feature />
     </div>
   )
 };

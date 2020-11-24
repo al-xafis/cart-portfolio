@@ -32,19 +32,21 @@
 .feature {
   padding: 12rem 16rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px inset #e1e3e3;
 }
 
 .feature__description {
   width: 40%;
+  order: 3;
 }
 
 .feature__pic {
   width: 40%;
   display: block;
   text-align: center;
+  order: 2;
 }
 
 .feature__pic img {
@@ -68,4 +70,27 @@
   border: 1px solid black;
   font-size: 1.65rem;
   opacity: .5;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 64.375em) {
+  .feature {
+    padding: 12rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px inset #e1e3e3;
+  }
+
+  .feature__description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .feature__pic {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 }

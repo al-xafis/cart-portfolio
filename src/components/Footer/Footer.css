@@ -84,3 +84,19 @@
   font-weight: 700;
   font-style: italic;
 }
+
+@media screen and (max-width: 64.375em) {
+  
+  .footer {
+    padding: 2rem 3rem 0;
+  }
+
+  .footer_top {
+    flex-direction: column;
+  }
+
+  .footer__socials{
+    align-self: center;
+    order: 1;
+  }
+}
