@@ -12,6 +12,8 @@
 }
 
 .shop__body__content__description {
+  width: 100%;
+  flex-shrink: 1;
   color: #000;
 }
 
@@ -69,6 +71,7 @@
 }
 
 .shop__image {
+  flex-shrink: 1;
   width: 100%;
   max-width: 500px;
   max-height: 400px;
@@ -80,4 +83,36 @@
 
 .shop__body__content:nth-of-type(even) .shop__image {
   transform: perspective(650px) rotate(-5deg) rotateX(2.5deg) rotateY(15deg) translateX(-30px) scale(.8);
+}
+
+@media screen and (max-width: 81.25em) {
+  .shop__body__content {
+    padding: 0 5rem;
+  }
+  
+}
+
+@media screen and (max-width: 78.125em) {
+  .shop__image {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .shop__body__content {
+    flex-direction: column-reverse;
+    padding: 0 2rem;
+  }
+  .shop__image {
+    transform: none;
+    margin-bottom: 2rem;
+  }
+
+  .shop__body__content:nth-of-type(even) {
+    flex-direction: column-reverse;
+  }
+
+  .shop__body__content:nth-of-type(even) .shop__image {
+    transform: none;
+  }
 }

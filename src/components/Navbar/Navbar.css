@@ -35,10 +35,6 @@
   display: block;
 }
 
-.nav__list {
-
-}
-
 .nav__item {
   display: inline-block;
   opacity: .75;
@@ -51,14 +47,6 @@
 
 .nav__item:hover {
   opacity: 1;
-}
-
-.nav__link {
-
-}
-
-.nav__auth {
-
 }
 
 @media screen and (max-width: 64.375em) {

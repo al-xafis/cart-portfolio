@@ -46,8 +46,8 @@ const Navbar = () => {
       </li>
     </ul>
     <div className="nav__auth">
-      <Button text="Sign in"/>
-      <Button text="Sign up" classh="ml" yel="true"/>
+      <Button to="/login" text="Sign in"/>
+      <Button to="/register" text="Sign up" classh="ml" yel="true"/>
     </div>
   </nav>
   )

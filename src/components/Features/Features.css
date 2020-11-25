@@ -30,9 +30,9 @@
 }
 
 .feature {
-  padding: 12rem 16rem;
+  padding: 12rem 18rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-bottom: 1px inset #e1e3e3;
 }
