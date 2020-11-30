@@ -54,3 +54,21 @@
     display: none;
   }
 }
+
+.signout__button {
+  padding: 1rem 1.7rem;
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  opacity: .75;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+  text-transform: uppercase;
+  color: #fff !important;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.singout__button:hover {
+  opacity: 1;
+}

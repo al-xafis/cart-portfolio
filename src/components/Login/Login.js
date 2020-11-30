@@ -17,18 +17,18 @@ const Login = () => {
   const login = (event) => {
     event.preventDefault();
     auth.signInWithEmailAndPassword(email, password)
-    // .then((authUser) => dispatch(enter(authUser)))
     .catch((err) => console.log(err))
   }
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        dispatch(enter(authUser.email))
-      } else {
+        dispatch(enter(authUser.email));
+        history.push('/');
+      } 
+      else {
         dispatch(exit());
       }
-      
     })
   }, []);
 

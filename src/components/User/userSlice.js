@@ -10,7 +10,7 @@ const userSlice = createSlice({
       state.user = action.payload;
     },
     exit(state) {
-      state.user = {};
+      state.user = null;
     }
   },
 })
